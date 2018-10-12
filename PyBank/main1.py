@@ -44,10 +44,12 @@ for i in range(0,len(revenue)-1):
  # greatest increase in profits (date and amount)(max function)
     max_net=max(revenue_change)
         # associate date for the max
-    max_date=months[revenue_change.index(max_net)]
+    max1=max(revenue)  
+    max_date=months[revenue.index(max1)]
 # greatest decrease in losses (date and amount) (min function)
     min_net=min(revenue_change)
-    min_date=months[revenue_change.index(min_net)]
+    min1=min(revenue)
+    min_date=months[revenue.index(min1)]
 
 #printing the results
     print("Averege revenue change:$"+str(avg_net_change))
